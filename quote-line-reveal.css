@@ -1,0 +1,10 @@
+#core-idea:after{display:none!important;content:none!important}
+#core-idea .quote-grid blockquote{color:var(--blue)!important}
+#core-idea .quote-grid blockquote{opacity:1;transform:none}
+#core-idea .quote-grid blockquote span{display:block;opacity:0;transform:translateY(1.1em);clip-path:inset(0 0 100% 0);transition:opacity 1.25s ease,transform 1.45s cubic-bezier(.22,.61,.36,1),clip-path 1.45s cubic-bezier(.22,.61,.36,1)}
+#core-idea.is-quote-active .quote-grid blockquote span{opacity:1;transform:translateY(0);clip-path:inset(0)}
+#core-idea.is-quote-active .quote-grid blockquote span:nth-child(1){transition-delay:.15s}
+#core-idea.is-quote-active .quote-grid blockquote span:nth-child(2){transition-delay:.5s}
+#core-idea.is-quote-active .quote-grid blockquote span:nth-child(3){transition-delay:.85s}
+#core-idea.is-quote-active .quote-grid blockquote span:nth-child(4){transition-delay:1.2s}
+@media(max-width:760px){#core-idea .quote-grid blockquote span{display:inline}#core-idea .quote-grid blockquote span:after{content:' '}}

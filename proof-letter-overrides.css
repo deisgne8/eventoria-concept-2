@@ -1,0 +1,63 @@
+.proof-project-letters span{transform:translate(calc(var(--x) * (1 - var(--letter-progress,0)) + var(--fx,0px) * var(--letter-progress,0)),calc(var(--y) * (1 - var(--letter-progress,0)) + var(--fy,0px) * var(--letter-progress,0)));transition:none}
+.proof-project-letters span:nth-child(1){--fx:0vw;--fy:0vh}
+.proof-project-letters span:nth-child(2){--fx:-16vw;--fy:2vh}
+.proof-project-letters span:nth-child(3){--fx:-1vw;--fy:-34vh}
+.proof-project-letters span:nth-child(4){--fx:-18vw;--fy:0vh}
+.proof-project-letters span:nth-child(5){--fx:-31vw;--fy:0vh}
+.proof-project-letters span:nth-child(6){--fx:2vw;--fy:-34vh}
+.proof-project-letters span:nth-child(7){--fx:-17vw;--fy:-36vh}
+.proof-project-letters span:nth-child(8){--fx:62vw;--fy:-66vh}
+.proof-project-letters span:nth-child(9){--fx:49vw;--fy:-66vh}
+.proof-project-letters span:nth-child(10){--fx:19vw;--fy:-66vh}
+.proof-project-letters span:nth-child(11){--fx:5vw;--fy:-66vh}
+.proof-project-feature.is-assembled .proof-project-letters span{transform:translate(var(--fx,0px),var(--fy,0px))}
+.proof-project-feature.is-assembled .proof-project-letters{font-weight:500!important;letter-spacing:0}
+.proof-project-feature.is-assembled .proof-project-letters span{top:4%!important;transform:none!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(1){left:2%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(2){left:11%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(3){left:20%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(4){left:29%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(5){left:38%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(6){left:47%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(7){left:56%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(8){left:65%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(9){left:74%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(10){left:83%!important}
+.proof-project-feature.is-assembled .proof-project-letters span:nth-child(11){left:92%!important}
+.proof-project-feature.is-pinned .proof-project-image{position:fixed;inset:0;width:100vw;height:100svh;z-index:10}
+.proof-project-feature.is-assembled .proof-project-image::before{content:"60 CURZON\A APARTMENT\A\A VIEW PROJECT ↗";position:absolute;right:8%;bottom:6%;z-index:2;white-space:pre;color:#fff;font-family:inherit;font-size:clamp(16px,2.1vw,30px);font-weight:400;line-height:1.05;letter-spacing:.02em;text-transform:uppercase}
+.proof-project-feature.is-assembled .proof-project-image::before{content:none}
+.proof-first-details{position:absolute;left:6%;bottom:6%;z-index:3;max-width:min(520px,42vw);color:#fff;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.proof-project-feature.is-assembled .proof-first-details{opacity:1;transform:translateY(0)}
+.proof-first-details h3{margin:0 0 10px;font-family:'Clash Grotesk',Helvetica,Arial,sans-serif;font-size:35px;font-weight:500;letter-spacing:0}
+.proof-first-details p{margin:0;font-size:18px;line-height:1.4;color:rgba(255,255,255,.82)}
+.proof-project-letters{font-size:clamp(68px,9vw,150px)}
+.proof-next-letters{position:absolute;inset:0;z-index:2;color:#fff;font-family:'Clash Grotesk',Helvetica,Arial,sans-serif;font-size:clamp(68px,9vw,150px);font-weight:600!important;line-height:1;letter-spacing:0}
+.proof-next-letters span{position:absolute;display:block;transform:translate(var(--x),var(--y));transition:transform .15s linear}
+.proof-next-letters span:nth-child(1){left:3%;top:5%;--x:-2vw;--y:-2vh}
+.proof-next-letters span:nth-child(2){left:23%;top:38%;--x:8vw;--y:8vh}
+.proof-next-letters span:nth-child(3){left:43%;top:4%;--x:-7vw;--y:-8vh}
+.proof-next-letters span:nth-child(4){left:63%;top:40%;--x:8vw;--y:10vh}
+.proof-next-letters span:nth-child(5){left:82%;top:4%;--x:6vw;--y:-5vh}
+.proof-next-letters span:nth-child(6){left:14%;top:68%;--x:-5vw;--y:8vh}
+.proof-next-letters span:nth-child(7){left:34%;top:68%;--x:5vw;--y:10vh}
+.proof-next-letters span:nth-child(8){left:54%;top:68%;--x:-6vw;--y:8vh}
+.proof-next-letters span:nth-child(9){left:74%;top:68%;--x:7vw;--y:9vh}
+.proof-next-letters span:nth-child(10){left:90%;top:68%;--x:4vw;--y:7vh}
+.proof-next-letters span{transform:translate(calc(var(--x) * (1 - var(--next-letter-progress,0))),calc(var(--y) * (1 - var(--next-letter-progress,0))))}
+.proof-next-letters span:nth-child(1){--x:-2vw;--y:-2vh}.proof-next-letters span:nth-child(2){--x:8vw;--y:8vh}.proof-next-letters span:nth-child(3){--x:-7vw;--y:-8vh}.proof-next-letters span:nth-child(4){--x:8vw;--y:10vh}.proof-next-letters span:nth-child(5){--x:6vw;--y:-5vh}.proof-next-letters span:nth-child(6){--x:-5vw;--y:8vh}.proof-next-letters span:nth-child(7){--x:5vw;--y:10vh}.proof-next-letters span:nth-child(8){--x:-6vw;--y:8vh}.proof-next-letters span:nth-child(9){--x:7vw;--y:9vh}.proof-next-letters span:nth-child(10){--x:4vw;--y:7vh}
+.proof-next-image.is-assembled .proof-next-letters span{top:4%!important;transform:none!important}
+.proof-next-image.is-assembled .proof-next-letters span:nth-child(1){left:2%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(2){left:12%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(3){left:22%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(4){left:32%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(5){left:42%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(6){left:52%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(7){left:62%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(8){left:72%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(9){left:82%!important}.proof-next-image.is-assembled .proof-next-letters span:nth-child(10){left:92%!important}
+.proof-next-details{position:absolute;left:6%;bottom:6%;z-index:3;max-width:min(520px,42vw);color:#fff;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.proof-next-image.is-assembled .proof-next-details{opacity:1;transform:translateY(0)}
+.proof-next-details h3{margin:0 0 10px;font-family:'Clash Grotesk',Helvetica,Arial,sans-serif;font-size:35px;font-weight:500;letter-spacing:0}
+.proof-next-details p{margin:0;font-size:18px;line-height:1.4;color:rgba(255,255,255,.82)}
+.proof-third-details{position:absolute;left:6%;bottom:6%;z-index:3;max-width:min(520px,42vw);color:#fff;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.proof-third-image.is-assembled .proof-third-details{opacity:1;transform:translateY(0)}
+.proof-third-details h3{margin:0 0 10px;font-family:'Clash Grotesk',Helvetica,Arial,sans-serif;font-size:35px;font-weight:500;letter-spacing:0}
+.proof-third-details p{margin:0;font-size:18px;line-height:1.4;color:rgba(255,255,255,.82)}
+.proof-third-image .proof-next-letters span:nth-child(11){left:24%;top:5%;--x:6vw;--y:-6vh}
+.proof-third-image .proof-next-letters span:nth-child(12){left:86%;top:68%;--x:-5vw;--y:8vh}
+.proof-third-image .proof-next-letters span:nth-child(4){margin-right:.35em}
+.proof-third-image.is-assembled .proof-next-letters span:nth-child(1){left:2%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(2){left:10%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(3){left:18%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(4){left:26%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(5){left:34%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(6){left:42%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(7){left:50%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(8){left:58%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(9){left:66%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(10){left:74%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(11){left:82%!important}.proof-third-image.is-assembled .proof-next-letters span:nth-child(12){left:90%!important}
+.proof-project-letters,.proof-next-letters{font-weight:500!important}
